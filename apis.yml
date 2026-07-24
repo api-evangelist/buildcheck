@@ -1,7 +1,29 @@
 aid: buildcheck
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/buildcheck.png
 name: Buildcheck
-description: Buildcheck is a company surfaced as a portfolio company of uncork-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Buildcheck is a Sweden-based cloud software platform that simplifies
+  self-inspections and quality checklists for construction and infrastructure
+  projects. The service uses AI to automatically generate project-specific
+  inspection and control plans from uploaded building documents, then lets field
+  teams document work on a mobile app with photo capture and digital signatures,
+  share progress with clients through shareable links, and export organized PDF
+  reports. It offers company-branded templates, role-based access, SSO and other
+  enterprise features. Buildcheck was founded by Anders Jacobson (previously Next
+  One Technology) and Johnny Wulcan (founder of Byggplanen). It is surfaced in
+  the API Evangelist network as a company profile; no public developer API or
+  API documentation has been found on its site as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/buildcheck/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,44 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  Identity enriched from buildcheck.com (Swedish construction-inspection SaaS),
+  the only identifiable live company named "Buildcheck". The Uncork Capital
+  portfolio listing carried no outbound link, so the VC attribution seeded in
+  this stub is unverified against buildcheck.com. No public API surface found.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Construction
+- ConTech
+- Inspection
+- Quality Assurance
+- Field Service
+- Checklists
+- SaaS
+- Artificial Intelligence
+- Sweden
 apis: []
+common:
+- type: DomainSecurity
+  url: security/buildcheck-domain-security.yml
+- type: Website
+  url: https://buildcheck.com/
+- type: Pricing
+  url: https://buildcheck.com/#priser
+- type: SignUp
+  url: https://app.buildcheck.com/login?mode=register
+- type: Login
+  url: https://app.buildcheck.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
