@@ -36,6 +36,8 @@ description: >-
   the API Evangelist network as a company profile; no public developer API or
   API documentation has been found on its site as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/buildcheck/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
