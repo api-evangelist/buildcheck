@@ -1,0 +1,34 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://buildcheck.com/#priser
+sources:
+- https://buildcheck.com/#priser
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Swedish construction self-inspection SaaS; Pro tier 360kr/mån including 1 project manager, Enterprise
+  is contact-us. 14-day free trial mentioned. No API pricing stated.
+plan_count: 2
+currency: SEK
+plans:
+- name: Pro
+  price_text: 360kr/mån
+  price: 360
+  currency: SEK
+  period: month
+  unit: 1st projektledare
+  included_quota: Obegränsat antal yrkesarbetare, Obegränsat antal projekt, Alla grundfunktioner, Fri
+    uppstart och utbildning, Fri support
+- name: Enterprise
+  price_text: Kontakta oss
+  period: none
+  included_quota: Alla grundfunktioner, Single Sign On (SSO), Custom branding, Rättighetsstyrning
