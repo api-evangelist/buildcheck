@@ -76,6 +76,8 @@ tags_raw:
 - Sweden
 apis: []
 common:
+- type: Plans
+  url: plans/buildcheck-plans-pricing.yml
 - type: DomainSecurity
   url: security/buildcheck-domain-security.yml
 - type: Website
